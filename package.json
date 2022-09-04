@@ -22,11 +22,6 @@
   },
   "homepage": "https://github.com/talexandru1987/book-engine#readme",
   "devDependencies": {
-    "concurrently": "^7.3.0",
-    "nodemon": "^2.0.19"
-  },
-  "dependencies": {
-    "apollo-server": "^3.10.2",
-    "graphql": "^16.6.0"
+    "concurrently": "^7.3.0"
   }
 }

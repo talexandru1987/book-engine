@@ -1,6 +1,12 @@
 import { useMutation, useQuery } from "@apollo/client";
 import React from "react";
-import { Jumbotron, Container, CardColumns, Card, Button } from "react-bootstrap";
+import {
+  Jumbotron,
+  Container,
+  CardColumns,
+  Card,
+  Button,
+} from "react-bootstrap";
 import { REMOVE_BOOK } from "../graphql/mutations";
 import { ME } from "../graphql/queries";
 
@@ -53,7 +59,11 @@ const SavedBooks = () => {
             return (
               <Card key={book.bookId} border="dark">
                 {book.image ? (
-                  <Card.Img src={book.image} alt={`The cover for ${book.title}`} variant="top" />
+                  <Card.Img
+                    src={book.image}
+                    alt={`The cover for ${book.title}`}
+                    variant="top"
+                  />
                 ) : null}
                 <Card.Body>
                   <Card.Title>{book.title}</Card.Title>
